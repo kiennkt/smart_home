@@ -3,8 +3,7 @@
 > Chức năng:
 > * Thu thập nhiệt độ độ ẩm, hiển thị lên LCD
 > * Đo khí gas, kết hợp với còi báo nếu vượt ngưỡng
-> * Nhận biết chuyển động qua cảm biến hồng ngoại, điều khiển led
-> * Nhận biết chuyển động ra vào cửa, điều khiển servo
+> * Nhận biết trời sáng tối, tắt bật bóng đèn
 > * Dữ liệu nhiệt độ, độ ẩm, khí gas được gửi từ Arduino tới gateway ESP32 qua module NRF24L01 (module thu phát sóng vô tuyến).
 > * Tại gateway nhận được dữ liệu sau đó gửi lên nền tảng Thingsboard qua giao thức MQTT. Tại đây thực hiện giám sát, trực quan hóa dữ liệu. Cảnh báo trực tiếp đến điện thoại có sẵn nền tảng Thingsboard nếu khí gas vượt ngưỡng
 

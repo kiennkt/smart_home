@@ -1,5 +1,5 @@
 # Mô hình Smart home
-![Mô hình](https://github.com/kiennkt/smart_home/blob/main/smart_home.png)
+![Mô hình](https://github.com/kiennkt/smart_home/blob/main/smarthome.PNG)
 > Chức năng:
 > * Thu thập nhiệt độ độ ẩm, hiển thị lên LCD
 > * Đo khí gas, kết hợp với còi báo nếu vượt ngưỡng
@@ -32,6 +32,17 @@
 | 5V | VCC |
 | GND | GND |
 | A0 | Analog |
+### Kết nối Cảm biến ánh sáng
+|    Arduino    |    Light   |
+|---------------|---------------|
+| 5V | VCC |
+| GND | GND |
+| D5 | Digital |
+### Kết nối còi buzzer
+|    Arduino    |    Buzzer   |
+|---------------|---------------|
+| D6 | Chân (+) |
+| GND | Chân (-) |
 ### Kết nối với LCD1602
 Kết nối qua module I2C
 |    Arduino    |    LCD   |
@@ -40,6 +51,12 @@ Kết nối qua module I2C
 | GND | GND |
 | A4 | SDA |
 | A5 | SCL |
+### Kết nối Led
+|    Arduino    |    Led   |
+|---------------|---------------|
+| D2 | Anode |
+| GND | Cathode |
+* Giữa GND và Cathode mắc thêm 1 điện trở
 ## Gateway ESP32
 |    ESP32    |    NRF24L01   |
 |---------------|---------------|

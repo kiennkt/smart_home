@@ -26,7 +26,7 @@
 #define NRF_SCK 18
 #define NRF_CSN 5
 #define NRF_CE 4
-const uint64_t RxAddress = 0xF0F0F0F0E1LL; // address NRF tranmister and reciever
+const uint64_t TxAddress = 0xF0F0F0F0E1LL; // address NRF tranmister
 
 // struct contain sensor values
 struct Data {
@@ -74,7 +74,7 @@ void connectThingsBoard(){
 
 void connectNRFModule(){
   radio.begin();
-  radio.openReadingPipe(0, RxAddress);
+  radio.openReadingPipe(0, TxAddress);
   radio.setPALevel(RF24_PA_MIN);
   radio.startListening();
 }
